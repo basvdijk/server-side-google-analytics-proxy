@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "8eb3492a-5b07-474a-a243-ecb4923640cc",
+		"name": "Server side analytics proxy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pageview",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000?type=page_view&title=Test article 1&path=articles/test-article-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"query": [
+						{
+							"key": "type",
+							"value": "page_view"
+						},
+						{
+							"key": "title",
+							"value": "Test article 1"
+						},
+						{
+							"key": "path",
+							"value": "articles/test-article-1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000?type=event&category=shopping&action=purchase&label=amount&value=123.45",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"query": [
+						{
+							"key": "type",
+							"value": "event"
+						},
+						{
+							"key": "category",
+							"value": "shopping"
+						},
+						{
+							"key": "action",
+							"value": "purchase"
+						},
+						{
+							"key": "label",
+							"value": "amount"
+						},
+						{
+							"key": "value",
+							"value": "123.45"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
