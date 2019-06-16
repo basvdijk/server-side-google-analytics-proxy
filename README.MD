@@ -21,7 +21,7 @@ Install the files on your server, for debugging you can run `php -S localhost:80
 ### Pageview
 
 #### Url
-`http://localhost:8000?type=page_view&title=Test article 1&path=articles/test-article-1`
+http://localhost:8000?type=page_view&title=Test%20article%201&path=articles/test-article-1
 
 #### Parameters
 ```
@@ -33,7 +33,7 @@ path   URI of the page without slash at beginning
 ### Event
 
 #### Url
-`http://localhost:8000?type=event&category=shopping&action=purchase&label=amount&value=123.45`
+http://localhost:8000?type=event&category=shopping&action=purchase&label=amount&value=123.45
 
 #### Parameters
 ```
