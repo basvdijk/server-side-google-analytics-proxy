@@ -8,7 +8,7 @@ _Warning: This code is far from feature complete and is more a MVP to log `page 
 ## Installation
 Copy `config.example.php` to `config.php` and set the values in `config.php`.
 
-For more security replace `e0b3d458-b76e-40f5-b186-86ca96a4a578` with your own GUID or unique string.
+For more security replace `e0b3d458-b76e-40f5-b186-86ca96a4a578` in all files with your own GUID or unique string.
 
 ## Running
 Install the files on your server, for debugging you can run `php -S localhost:8000` in the `src` folder to run it locally.
